@@ -860,10 +860,11 @@
               "ECMASCRIPT#sec-json.parse">JSON-parsing</a> the second element
               in the |paymentMethod| tuple.
               </li>
-              <li>If required by the specification that defines the
-              |identifier|, then [=converted to an IDL value|convert=] |data|
-              to an IDL value of the type specified there. Otherwise,
-              [=converted to an IDL value|convert=] to {{object}}.
+              <li>If specified by the specification that defines the
+              |identifier|, then run the <a>steps to convert and validate
+              payment method data</a> on |data|, to an IDL value of the type
+              specified there. Otherwise, [=converted to an IDL value|convert=]
+              |data| to {{object}}.
               </li>
               <li>If conversion results in an <a>exception</a> |error|:
                 <ol>
